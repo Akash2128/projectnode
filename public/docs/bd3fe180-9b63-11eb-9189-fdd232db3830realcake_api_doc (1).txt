@@ -1,0 +1,288 @@
+1. All Products
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- none
+
+2. Limited no. of Products
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+per_page:5
+form-data:- none
+
+3. Limited no. of Products Per Page (Pagination)
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+page_no:1
+per_page:5
+form-data:- none
+
+4. All Featured Products
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+featured:t
+form-data:- none
+
+5. Limited no. of Featured Products
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+featured:t
+per_page:5
+form-data:- none
+
+6. Limited no. of Featured Products Per Page (Pagination)
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+featured:t
+page_no:1
+per_page:5
+form-data:- none
+
+7. All ProductsBy Category
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+category:10
+form-data:- none
+
+8. Limited no. of Products by Category
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+category:10
+per_page:5
+form-data:- none
+
+9. Limited no. of Products by Category Per Page (Pagination)
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+category:10
+page_no:1
+per_page:5
+form-data:- none
+
+10. All ProductsBy SubCategory
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+subcategory:1
+form-data:- none
+
+11. Limited no. of Products by SubCategory
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+subcategory:1
+per_page:5
+form-data:- none
+
+12. Limited no. of Products by SubCategoryPer Page (Pagination)
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+subcategory:1
+page_no:1
+per_page:5
+form-data:- none
+
+
+13. All ProductsBy Brand
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+brand:home roots
+form-data:- none
+
+14. Limited no. of Products by Brand
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+brand:home roots
+per_page:5
+form-data:- none
+
+15. Limited no. of Products by Brand Per Page (Pagination)
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+brand:home roots
+page_no:1
+per_page:5
+form-data:- none
+
+16. All Categories
+url:-http://realcakebakers.com/api/webdata.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+all_category:true
+form-data:- none
+
+17. All SubCategories By Category
+url:-http://realcakebakers.com/api/webdata.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+all_subcategory_by_catid:10
+form-data:- none
+
+18. All Categories with it's Subcategories
+url:-http://realcakebakers.com/api/webdata.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+all_cat_subcat:true
+form-data:- none
+
+19. User's API Registration
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+sign_up:
+name:nanu
+email:nanu@g.c
+phone:7894567894
+password:123
+
+20. User's API Login
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+login:true
+email:nanu@g.c
+pass:123
+
+21. User's API Update Profile
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+update_profile:
+name:nanu
+email:nanu@g.c
+phone:7894567894
+shippingAddress:add
+shippingCity:gwl
+shippingState:mp
+shippingPincode:568923
+
+22. User's API Change Password
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+change_pass:
+oldpass:135
+newpass:123
+
+23. User's API Logout
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+logout:true
+
+24. User's API Place Order
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+place_order:
+orderitem:[{"pid":"118","qnty":"2","price":"85"},{"pid":"104","qnty":"1","price":"100"}]
+paymentMethod:cod/online
+online_payment_status:1
+phone:7894567894
+shippingAddress:add
+shippingCity:gwl
+shippingState:mp
+shippingPincode:568923
+
+25. User's API Previous Orders
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+previous_orders:true
+
+26. Product Deatil
+url:-http://realcakebakers.com/api/products.php
+method:-get
+param:-
+app_secret_key:bake@456%26real*%23$
+prodid:118
+form-data:- none
+
+27. User's API Wishlist
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+wishlist:true
+
+28. User's API Add to Wishlist
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+add_wishlist:true
+proid:118
+
+29. User's API Add to Wishlist
+url:-http://realcakebakers.com/api/userdata.php
+method:-post
+param:-
+app_secret_key:bake@456%26real*%23$
+form-data:- 
+userid:41
+token:f47a315eaa5bcb349731dce209a1fc86
+remove_wishlist:true
+proid:118
+
+
+
