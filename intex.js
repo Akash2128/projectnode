@@ -3,6 +3,7 @@ var uuid=require('uuid');
 var express=require('express');
 var mysql=require('mysql');
 const bodyParser = require('body-parser');
+const port=process.env.PORT || 8000;
 
 //connect my sql
 var con=mysql.createConnection({
@@ -165,6 +166,6 @@ app.get('/slider',function(req,res,next){
         })
     */
 
-app.listen(3000,()=>{
-    console.log(' widijdijde')
+app.listen(port,()=>{
+    console.log(`lllllll ${port}`);
 })
