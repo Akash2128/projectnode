@@ -2,9 +2,9 @@
   "name": "akash",
   "version": "1.0.0",
   "description": "",
-  "main": "video.js",
+  "main": "intex.js",
   "scripts": {
-    "devStart": "nodemon video.js"
+   "start":"node intex.js"
   },
   "keywords": [],
   "author": "",

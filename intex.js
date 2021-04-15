@@ -9,7 +9,8 @@ var con=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'',
-    database:'demonodesjs'
+   // database:'demonodesjs'
+   database:'usersone'
 });
 
   //password util
@@ -19,6 +20,8 @@ var con=mysql.createConnection({
       .slice(0,length);/*return required number of characters*/
 
   };
+
+  
 
   var sha512=function(password,salt){
       var hash=crypto.createHmac('sha512',salt);
@@ -85,6 +88,19 @@ app.post('/register/',(req,res,next)=>{
    
 
 })
+app.get('/slider',(req,res,next)=>{
+   
+    con.query('SELECT * FROM slider',function(err,result,fields){
+        con.on('error',function(err){
+            console.log('[MySQL ERROR]',err);
+        });
+
+           // var salt=result[0].salt;
+        
+            res.end(JSON.stringify(result[0]+"ajbhhjbsbshgdhghdvdhgvdgvdsgvdhgvdsgvdhdvhdsvhdsvhdsvdshvddgsvdshgvdhgdvhsdvdsvg"))
+    });
+
+
 
 app.post('/login/',(req,res,next)=>{
     var post_data=req.body;
@@ -121,6 +137,33 @@ app.post('/login/',(req,res,next)=>{
         var salt=result[0].salt;
     })*/
 })
+
+
+    })
+
+   // "devStart": "nodemon video.js"
+    
+
+    /*
+app.get('/slider',function(req,res,next){
+    //slider
+   // if(req.query.key==API_KEY){
+  // var fbid=req.query.fbid
+  // if(fbid!=null){
+    con.getConnection(function(error,conn){
+        conn.query('SELECT * FROM slider',function(err,rows,fields){
+            if(error){
+                res.status(500)
+                res.send(JSON.stringify({success:false,message:error.message}))
+            }else{
+                if(rows.length>0){
+                    res.send(JSON.stringify({success:true,result:rows}))
+                }else{
+                    res.send(JSON.stringify({success:false,message:"Empty"}))
+                }
+            }
+        })
+    */
 
 app.listen(3000,()=>{
     console.log(' widijdijde')
